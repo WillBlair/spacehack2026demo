@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   RAIL_CORRIDOR_COORDS,
+  RAIL_BRANCH_COORDS,
   CAPE_ROUTE_COORDS,
   SOLAR_FARM_STATIONS,
 } from "@/lib/constants";
@@ -151,6 +152,21 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
           opacity: 0.95,
         }).addTo(mapInstance);
 
+        // Branch line (glow)
+        const branchLatLngs = RAIL_BRANCH_COORDS.map(([lat, lng]) => L.latLng(lat, lng));
+        L.polyline(branchLatLngs, {
+          color: "#10b981",
+          weight: 8,
+          opacity: 0.2,
+        }).addTo(mapInstance);
+
+        // Branch line (main)
+        L.polyline(branchLatLngs, {
+          color: "#34d399",
+          weight: 4,
+          opacity: 0.95,
+        }).addTo(mapInstance);
+
         // Solar farm markers — bright, larger
         const solarIcon = L.divIcon({
           html: `<div style="
@@ -204,7 +220,13 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
           .addTo(mapInstance)
           .bindTooltip("Iskenderun", { permanent: true, direction: "left", className: "map-label-green", offset: [-10, 0] });
 
-        const bounds = L.latLngBounds(railLatLngs);
+        // Branch end marker — Haifa
+        const lastBranch = RAIL_BRANCH_COORDS[RAIL_BRANCH_COORDS.length - 1];
+        L.marker(L.latLng(lastBranch[0], lastBranch[1]), { icon: endIcon })
+          .addTo(mapInstance)
+          .bindTooltip("Haifa", { permanent: true, direction: "bottom", className: "map-label-green", offset: [0, 8] });
+
+        const bounds = L.latLngBounds([...railLatLngs, ...branchLatLngs]);
         mapInstance.fitBounds(bounds, { padding: [30, 30] });
       }
 

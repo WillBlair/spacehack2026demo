@@ -187,6 +187,13 @@ export const RAIL_CORRIDOR_COORDS: [number, number][] = [
   [36.6, 36.2],
 ];
 
+/** Secondary rail branch extending from Mafraq to Haifa port. */
+export const RAIL_BRANCH_COORDS: [number, number][] = [
+  [32.0, 36.5],       // Mafraq, Jordan (junction)
+  [32.4, 35.8],       // Northern Jordan crossing
+  [32.7940, 35.0421], // Haifa, Israel
+];
+
 /** Solar farm station points along the corridor (subset of waypoints). */
 export const SOLAR_FARM_STATIONS: { name: string; coords: [number, number]; capacityMW: number }[] = [
   { name: "Jubail terminal", coords: [26.5, 49.6], capacityMW: 200 },
@@ -197,6 +204,7 @@ export const SOLAR_FARM_STATIONS: { name: string; coords: [number, number]; capa
   { name: "Al-Haditha border", coords: [31.0, 39.0], capacityMW: 500 },
   { name: "Mafraq, Jordan", coords: [32.0, 36.5], capacityMW: 200 },
   { name: "Iskenderun port", coords: [36.6, 36.2], capacityMW: 100 },
+  { name: "Haifa port", coords: [32.7940, 35.0421], capacityMW: 100 },
 ];
 
 /**
