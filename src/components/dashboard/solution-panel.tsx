@@ -52,7 +52,7 @@ export function SolutionPanel() {
         >
           <div className="w-1.5 h-7 bg-emerald-500 rounded-full" />
           <h2 className="text-xl sm:text-2xl font-bold text-emerald-400 uppercase tracking-wide">
-            The Solution
+            Our Solution
           </h2>
         </motion.div>
 
