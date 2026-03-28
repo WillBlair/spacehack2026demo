@@ -67,7 +67,7 @@ export function SolutionPanel() {
           <span className="text-emerald-300 font-semibold">
             solar-powered electric rail corridor
           </span>{" "}
-          from Bahrain to the Mediterranean — bypassing every maritime chokepoint with{" "}
+          from Jubail to the Mediterranean — bypassing every maritime chokepoint with{" "}
           <span className="text-emerald-300 font-semibold">net-zero emissions.</span>
         </motion.p>
 

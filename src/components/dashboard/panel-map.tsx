@@ -94,7 +94,7 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
         });
         L.marker(L.latLng(CAPE_ROUTE_COORDS[0][0], CAPE_ROUTE_COORDS[0][1]), { icon: startIcon })
           .addTo(mapInstance)
-          .bindTooltip("Bahrain", { permanent: true, direction: "right", className: "map-label-red", offset: [8, 0] });
+          .bindTooltip("Jubail", { permanent: true, direction: "right", className: "map-label-red", offset: [8, 0] });
 
         // End marker — Haifa
         const endIcon = L.divIcon({
@@ -112,7 +112,7 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
         const lastCape = CAPE_ROUTE_COORDS[CAPE_ROUTE_COORDS.length - 1];
         L.marker(L.latLng(lastCape[0], lastCape[1]), { icon: endIcon })
           .addTo(mapInstance)
-          .bindTooltip("Haifa", { permanent: true, direction: "right", className: "map-label-red", offset: [8, 0] });
+          .bindTooltip("Iskenderun", { permanent: true, direction: "right", className: "map-label-red", offset: [8, 0] });
 
         // Cape point label
         const capeIcon = L.divIcon({
@@ -184,7 +184,7 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
         });
         L.marker(L.latLng(RAIL_CORRIDOR_COORDS[0][0], RAIL_CORRIDOR_COORDS[0][1]), { icon: startIcon })
           .addTo(mapInstance)
-          .bindTooltip("Bahrain", { permanent: true, direction: "right", className: "map-label-green", offset: [10, 0] });
+          .bindTooltip("Jubail", { permanent: true, direction: "right", className: "map-label-green", offset: [10, 0] });
 
         // End marker — Haifa
         const endIcon = L.divIcon({
@@ -202,7 +202,7 @@ export function PanelMap({ variant, delay = 0.6 }: PanelMapProps) {
         const lastRail = RAIL_CORRIDOR_COORDS[RAIL_CORRIDOR_COORDS.length - 1];
         L.marker(L.latLng(lastRail[0], lastRail[1]), { icon: endIcon })
           .addTo(mapInstance)
-          .bindTooltip("Haifa", { permanent: true, direction: "left", className: "map-label-green", offset: [-10, 0] });
+          .bindTooltip("Iskenderun", { permanent: true, direction: "left", className: "map-label-green", offset: [-10, 0] });
 
         const bounds = L.latLngBounds(railLatLngs);
         mapInstance.fitBounds(bounds, { padding: [30, 30] });

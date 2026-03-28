@@ -163,26 +163,40 @@ export const SOLAR_IRRADIANCE_KWH_M2_YEAR = 2_500;
 
 /** Rail corridor waypoints: Bahrain → Eastern Saudi → Riyadh → Al-Haditha → Amman → Haifa. */
 export const RAIL_CORRIDOR_COORDS: [number, number][] = [
-  [26.0667, 50.5577],   // Bahrain (Khalifa Bin Salman Port)
-  [25.3548, 49.5857],   // Dammam, Saudi Arabia
-  [24.7136, 46.6753],   // Riyadh
-  [23.8859, 45.0792],   // Midpoint Saudi interior
-  [28.1248, 39.0652],   // Tabuk region
-  [30.1956, 36.8986],   // Al-Haditha / Jordan border
-  [31.9539, 35.9106],   // Amman, Jordan
-  [32.7940, 35.0421],   // Haifa, Israel (Mediterranean)
+  [26.5, 49.6],
+  [27.0, 49.0],
+  [27.5, 48.5],
+  [28.0, 48.0],
+  [28.5, 47.5],
+  [29.0, 47.0],
+  [29.5, 46.0],
+  [30.0, 45.0],
+  [30.2, 44.0],
+  [30.5, 43.0],
+  [30.5, 41.5],
+  [30.8, 40.5],
+  [31.0, 39.0],
+  [31.5, 38.0],
+  [31.8, 37.0],
+  [32.0, 36.5],
+  [32.3, 36.2],
+  [33.0, 36.3],
+  [34.0, 36.5],
+  [35.0, 36.3],
+  [35.5, 36.2],
+  [36.6, 36.2],
 ];
 
 /** Solar farm station points along the corridor (subset of waypoints). */
 export const SOLAR_FARM_STATIONS: { name: string; coords: [number, number]; capacityMW: number }[] = [
-  { name: "Bahrain Terminal Solar", coords: [26.0667, 50.5577], capacityMW: 200 },
-  { name: "Dammam Solar Array", coords: [25.3548, 49.5857], capacityMW: 800 },
-  { name: "Riyadh Corridor Farm", coords: [24.7136, 46.6753], capacityMW: 1_200 },
-  { name: "Central Desert Farm", coords: [23.8859, 45.0792], capacityMW: 1_500 },
-  { name: "Tabuk Solar Complex", coords: [28.1248, 39.0652], capacityMW: 1_000 },
-  { name: "Jordan Border Farm", coords: [30.1956, 36.8986], capacityMW: 500 },
-  { name: "Amman Solar Hub", coords: [31.9539, 35.9106], capacityMW: 200 },
-  { name: "Haifa Terminal Solar", coords: [32.7940, 35.0421], capacityMW: 100 },
+  { name: "Jubail terminal", coords: [26.5, 49.6], capacityMW: 200 },
+  { name: "Northern coastal", coords: [28.0, 48.0], capacityMW: 800 },
+  { name: "Wadi Ar-Rimmah", coords: [29.5, 46.0], capacityMW: 1200 },
+  { name: "Sakaka solar zone", coords: [30.2, 44.0], capacityMW: 1500 },
+  { name: "Turayf solar zone", coords: [30.5, 41.5], capacityMW: 1000 },
+  { name: "Al-Haditha border", coords: [31.0, 39.0], capacityMW: 500 },
+  { name: "Mafraq, Jordan", coords: [32.0, 36.5], capacityMW: 200 },
+  { name: "Iskenderun port", coords: [36.6, 36.2], capacityMW: 100 },
 ];
 
 /**
@@ -190,7 +204,7 @@ export const SOLAR_FARM_STATIONS: { name: string; coords: [number, number]; capa
  * Simplified great-circle waypoints for visualisation.
  */
 export const CAPE_ROUTE_COORDS: [number, number][] = [
-  [26.0667, 50.5577],   // Bahrain
+  [26.5000, 49.6000],   // Jubail
   [23.6345, 58.5922],   // Muscat, Oman
   [12.1140, 45.0343],   // Gulf of Aden
   [2.0469, 45.3182],    // Somali coast
