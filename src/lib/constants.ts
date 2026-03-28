@@ -213,20 +213,23 @@ export const SOLAR_FARM_STATIONS: { name: string; coords: [number, number]; capa
  */
 export const CAPE_ROUTE_COORDS: [number, number][] = [
   [26.5000, 49.6000],   // Jubail
-  [23.6345, 58.5922],   // Muscat, Oman
-  [12.1140, 45.0343],   // Gulf of Aden
-  [2.0469, 45.3182],    // Somali coast
-  [-4.0435, 39.6682],   // Mombasa region
-  [-15.4167, 40.6733],  // Mozambique Channel
-  [-33.9249, 25.5700],  // Port Elizabeth, SA
-  [-34.3568, 18.4741],  // Cape of Good Hope
-  [-33.0000, 5.0000],   // Mid-Atlantic
-  [-10.0000, -10.0000], // Equatorial Atlantic
-  [10.0000, -18.0000],  // West Africa
-  [28.0000, -15.0000],  // Canaries
-  [35.8997, -5.3364],   // Strait of Gibraltar
-  [36.7783, 3.0588],    // Algiers
-  [32.7940, 35.0421],   // Haifa (Mediterranean destination)
+  [24.0000, 59.5000],   // Gulf of Oman
+  [14.0000, 54.0000],   // Arabian Sea
+  [10.0000, 52.0000],   // East of Horn of Africa
+  [0.0000, 46.0000],    // East of Somalia
+  [-15.0000, 42.0000],  // Mozambique Channel
+  [-30.0000, 33.0000],  // East of South Africa
+  [-36.0000, 20.0000],  // Cape of Good Hope
+  [-25.0000, 10.0000],  // West of Namibia
+  [-10.0000, 0.0000],   // West of Angola
+  [5.0000, -15.0000],   // West of Liberia
+  [15.0000, -20.0000],  // West of Senegal
+  [30.0000, -15.0000],  // West of Morocco
+  [35.9000, -5.5000],   // Strait of Gibraltar
+  [37.0000, 3.0000],    // North of Algeria
+  [34.0000, 18.0000],   // Central Mediterranean
+  [33.0000, 30.0000],   // East Mediterranean
+  [36.6000, 36.2000],   // Iskenderun, Turkey
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
