@@ -83,7 +83,10 @@ export function Ticker({
         <span
           className={`text-5xl sm:text-6xl md:text-[4.5rem] font-mono font-extrabold tabular-nums tracking-tighter ${numberClassName}`}
         >
-          {formatNumber(displayValue)}
+          {displayValue.toLocaleString("en-US", {
+            minimumFractionDigits: isRealtime ? 2 : 0,
+            maximumFractionDigits: isRealtime ? 2 : 0,
+          })}
         </span>
         {/* Glow */}
         <div

@@ -103,6 +103,7 @@ export function ProblemPanel() {
             label={`CO₂ Wasted — ${activeCrisis.year}`}
             unit="tonnes of CO₂"
             targetValue={activeCrisis.extraCO2Tonnes}
+            isRealtime={activeCrisis.isOngoing}
             animationDuration={6000}
             numberClassName="text-red-400"
             labelClassName="text-red-400/80"
