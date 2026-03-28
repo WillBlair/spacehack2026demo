@@ -63,13 +63,12 @@ export function SolutionPanel() {
           transition={{ delay: 0.35 }}
           className="text-white/55 text-sm sm:text-base leading-relaxed"
         >
-          Build a{" "}
+          A{" "}
           <span className="text-emerald-300 font-semibold">
             solar-powered electric rail corridor
           </span>{" "}
-          from Bahrain to the Mediterranean. {RAIL_TRANSIT_HOURS} hours by rail
-          instead of {SHIP_TRANSIT_DAYS} days by rerouted ship.{" "}
-          <span className="text-emerald-300 font-semibold">Net-zero emissions.</span>
+          from Bahrain to the Mediterranean — bypassing every maritime chokepoint with{" "}
+          <span className="text-emerald-300 font-semibold">net-zero emissions.</span>
         </motion.p>
 
         {/* Time period selector */}

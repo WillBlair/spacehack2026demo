@@ -39,7 +39,7 @@ export function EmissionsChart() {
           </div>
           <div className="flex items-center gap-1.5">
             <div className="w-2.5 h-2.5 rounded-sm bg-emerald-500/70" />
-            <span className="text-emerald-400/60 tracking-wider">RAILBRIDGE</span>
+            <span className="text-emerald-400/60 tracking-wider">ELECTRIC RAIL</span>
           </div>
           <div className="flex items-center gap-1.5">
             <div className="w-2.5 h-2.5 rounded-sm border border-white/20" />
@@ -83,7 +83,7 @@ export function EmissionsChart() {
                   transition={{ delay: 1.35 + index * 0.06, duration: 0.4 }}
                   className="w-[35%] bg-gradient-to-t from-emerald-800 to-emerald-500"
                   style={{ borderRadius: "1px 1px 0 0" }}
-                  title={`${point.month}: ${point.emissionsWithRail}K tonnes (RailBridge)`}
+                  title={`${point.month}: ${point.emissionsWithRail}K tonnes (Electric Rail)`}
                 />
 
                 {/* Baseline line */}

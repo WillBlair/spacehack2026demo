@@ -5,7 +5,7 @@ import { EmissionsChart } from "@/components/dashboard/emissions-chart";
 
 /**
  * Main dashboard page — the single entry point for the SpaceHack 2026
- * RailBridge presentation.
+ * SpaceHack 2026 presentation.
  *
  * Layout:
  * ┌──────────────────────────────────────────┐
@@ -76,7 +76,7 @@ export default function DashboardPage() {
       {/* Footer */}
       <footer className="px-4 sm:px-6 py-3 bg-[#030306] border-t border-white/[0.04] flex items-center justify-between">
         <span className="text-[10px] font-mono text-white/20 tracking-wider">
-          RAILBRIDGE v1.0 · SPACEHACK 2026
+          NET-ZERO SUPPLY CHAIN · SPACEHACK 2026
         </span>
         <span className="text-[10px] font-mono text-white/15">
           DATA: Maritime Industry Reports 2024–2026

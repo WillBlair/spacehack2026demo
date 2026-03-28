@@ -1,5 +1,5 @@
 /**
- * Emission data, route geometry, and calculations for the RailBridge dashboard.
+ * Emission data, route geometry, and calculations for the SpaceHack 2026 dashboard.
  *
  * All numbers are sourced from 2024–2026 maritime industry reports. See the
  * implementation plan for full citations.

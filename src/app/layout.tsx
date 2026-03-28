@@ -23,9 +23,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RailBridge — Net-Zero Supply Chain Corridor | SpaceHack 2026",
+  title: "SpaceHack 2026 — Net-Zero Supply Chain Corridor",
   description:
-    "A solar-powered electric rail corridor from Bahrain to Haifa, replacing high-emission shipping reroutes caused by the Strait of Hormuz closure. Built for SpaceHack for Sustainability 2026.",
+    "A solar-powered electric rail corridor replacing high-emission shipping reroutes around the Cape of Good Hope. Built for SpaceHack for Sustainability 2026.",
   keywords: [
     "net zero",
     "sustainability",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     "SpaceHack 2026",
   ],
   openGraph: {
-    title: "RailBridge — Net-Zero Supply Chain Corridor",
+    title: "SpaceHack 2026 — Net-Zero Supply Chain Corridor",
     description:
-      "Replacing high-emission shipping reroutes with a solar-powered electric rail corridor from Bahrain to Haifa.",
+      "A solar-powered electric rail corridor replacing high-emission shipping reroutes around the Cape of Good Hope. Built for SpaceHack for Sustainability 2026.",
     type: "website",
   },
 };
